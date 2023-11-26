@@ -13,61 +13,60 @@
 
     </head>
     <body class="body2">
-        <header class="header desktop-nav">
+        <header class="header">
             <div class="container header-container">
-                <div class="link-page">
+                <nav>
                     <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2e2f42)">STUDIO</span></a>
-                    <nav>
-                        <ul class="link">
-                            <li>
-                                <a href="index.html" class="main-link">Studio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio.html" class="main-link active">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#Contacts" class="main-link">Contacts</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <ul class="link-info">
-                    <li>
-                        <a href="#info@devstudio.com" class="contact-link">info@devstudio.com</a>
-                    </li>
-                    <li>
-                        <a href="#+11 (000) 111-11-11" class="contact-link">+11 (000) 111-11-11</a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-
-        <header class="mobile-nav">
-            <div class="container mobile-container">
-                <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2e2f42)">STUDIO</span></a>
-                <svg width="32" height="22" class="js-open-menu">
-                    <use href="./images/icons.svg#hamburger"></use>
-                </svg>
-            </div>
-        </header>
-
-        <div class="js-menu-container mobile-menu" id="mobile-menu">
-            <div class="mobile-menu-container">
-                <button class="js-close-menu">x</button>
-                <nav class="mobile-navbar">
-                    <ul class="mobile-links">
+                    <ul class="link nav-list">
                         <li>
-                            <a class="mobile-link" href="">Studio</a>
+                            <a href="index.html" class="main-link">Studio</a>
                         </li>
                         <li>
-                            <a class="mobile-link active" href="">Portfolio</a>
+                            <a href="portfolio.html" class="main-link active">Portfolio</a>
                         </li>
                         <li>
-                            <a class="mobile-link" href="">Contacts</a>
+                            <a href="#Contacts" class="main-link">Contacts</a>
                         </li>
                     </ul>
-                    <div>
-                        <ul class="mobile-links">
+                </nav>
+                <address>
+                    <ul class="link-info">
+                        <li>
+                            <a href="#info@devstudio.com" class="contact-link">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a href="#+11 (000) 111-11-11" class="contact-link">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+                <!-- </header> -->
+        
+        
+                <!-- Hamburger -->
+        
+                <button class="menu-btn menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="32" height="22" class="menu-btn-icon">
+                        <use href="./images/icons.svg#hamburger"></use>
+                    </svg>
+                </button>
+        
+                <div class="mobile-nav-container js-menu-container" id="mobile-menu">
+                    <button class="js-close-menu">x</button>
+        
+                    <ul class="mobile-links mobile-nav-list">
+                        <li>
+                            <a class="mobile-item" href="index.html">Studio</a>
+                        </li>
+                        <li>
+                            <a class="mobile-item active" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="mobile-item" href="#">Contacts</a>
+                        </li>
+                    </ul>
+        
+                    <div class="mobile-nav-address-link">
+                        <ul class="mobile-nav-address">
                             <li>
                                 <a class="mobile-contact active" href="">11 (000) 111-11-11</a>
                             </li>
@@ -75,8 +74,8 @@
                                 <a href="" class="mobile-contact">info@devstudio.com</a>
                             </li>
                         </ul>
-
-                        <div class="team-socials">
+        
+                        <div class="team-social-media-link">
                             <a class="team-socials-icon">
                                 <svg width="16" height="16">
                                     <use href="./images/icons.svg#instagram-2"></use>
@@ -99,9 +98,70 @@
                             </a>
                         </div>
                     </div>
-                </nav>
+                </div>
+        
+                <!-- <header class="mobile-nav">
+                    <div class="container mobile-container">
+                        <a href="#WEBSTUDIO"><span>WEB</span><span style="color: var(--NAVY-BLUE, #2e2f42)">STUDIO</span></a>
+                        <svg width="32" height="22" class="js-open-menu">
+                            <use href="./images/icons.svg#hamburger"></use>
+                        </svg>
+                    </div>
+                </header> -->
+        
+                <!-- <div class="mobile-nav-container js-menu-container" id="mobile-menu">
+                    <div class="mobile-menu-container">
+                        <button class="js-close-menu">x</button>
+                        <nav class="mobile-navbar">
+                            <ul class="mobile-links">
+                                <li>
+                                    <a class="mobile-link active" href="">Studio</a>
+                                </li>
+                                <li>
+                                    <a class="mobile-link" href="">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a class="mobile-link" href="">Contacts</a>
+                                </li>
+                            </ul>
+                            <div>
+                                <ul class="mobile-links">
+                                    <li>
+                                        <a class="mobile-contact active" href="">11 (000) 111-11-11</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="mobile-contact">info@devstudio.com</a>
+                                    </li>
+                                </ul>
+        
+                                <div class="team-socials">
+                                    <a class="team-socials-icon">
+                                        <svg width="16" height="16">
+                                            <use href="./images/icons.svg#instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="team-socials-icon">
+                                        <svg width="16" height="16">
+                                            <use href="./images/icons.svg#twitter-1"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="team-socials-icon">
+                                        <svg width="16" height="16">
+                                            <use href="./images/icons.svg#linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="team-socials-icon">
+                                        <svg width="16" height="16">
+                                            <use href="./images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div> -->
             </div>
-        </div>
+        </header>
 
         
         <main >
@@ -118,7 +178,7 @@
             
         <!-- Project Cards -->
         <Section class="projectcardsection">
-            <div class="container">
+            <div class="card-wrap">
             <ul class="project">
                 <li class="team-card2">
                     <div class="project-card">
@@ -274,52 +334,58 @@
         </main>
 
         <footer class="footer">
-            <div class="container div-footer">
-                <div class="footer-gchild">
-                    <div class="footer-logo">
-                        <a href="#WEBSTUDIO"><span>WEB</span><span style="color: #F4F4FD;">STUDIO</span></a>
-                        <p class="footer-txt">Increase the flow of customer and<br>sales for your business with digital<br>marketing & growth solution</p>
-                    </div> 
-                    <div class="footer-socials">
-                        <p class="footer-social-media">Social Media</p>
-                        <div class="socialmedia-item">
-                            <a class="footer-socials-icon">
-                                <svg width="16" height="16">
-                                    <use href="./images/icons.svg#instagram-2"></use>
-                                </svg>
-                            </a>
-                            <a class="footer-socials-icon">
-                                <svg width="16" height="16">
-                                    <use href="./images/icons.svg#twitter-1"></use>
-                                </svg>
-                            </a>
-                            <a class="footer-socials-icon">
-                                <svg width="16" height="16">
-                                    <use href="./images/icons.svg#facebook"></use>
-                                </svg>
-                            </a>
-                            <a class="footer-socials-icon">
-                                <svg width="16" height="16">
-                                    <use href="./images/icons.svg#linkedin-1"></use>
-                                </svg>
-                            </a>
-                        </div> 
+            <div class="container div-footer special">
+                <div class="footer-logo">
+                    <a href="#WEBSTUDIO"><span>WEB</span><span style="color: #f4f4fd">STUDIO</span></a>
+                    <p class="footer-txt">
+                        Increase the flow of customer and<br />sales for your business with digital<br />marketing & growth
+                        solution
+                    </p>
+                </div>
+                <div class="footer-socials">
+                    <p class="footer-social-media footer-subscribe-text">Social Media</p>
+                    <div class="socialmedia-item">
+                        <a class="footer-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#instagram-2"></use>
+                            </svg>
+                        </a>
+                        <a class="footer-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#twitter-1"></use>
+                            </svg>
+                        </a>
+                        <a class="footer-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="footer-socials-icon">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#linkedin-1"></use>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="footer-sub">
+                </div>
+                <div class="footer-sub">
+                    <div class="footer-sub-width">
                         <p class="footer-subscribe-text">Subscribe</p>
                         <form class="form">
                             <input type="text" placeholder="Email" class="input-sub" />
-                            <button class="btn-sub">
-                                Subscribe
-                                <svg width="24" height="24">
-                                    <use href="./images/icons.svg#send"></use>
-                                </svg>
-                            </button>
+        
+        
+                            <div class="subscribe-btn-email">
+                                <button class="btn-sub">
+                                    Subscribe
+                                    <svg width="24" height="24">
+                                        <use href="./images/icons.svg#send"></use>
+                                    </svg>
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
-            </div>
-        </footer> 
+        </footer>
         <script
         defer
         src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
